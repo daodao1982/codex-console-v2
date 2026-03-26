@@ -29,7 +29,12 @@ docker build -t codex-register .
 
 echo "启动容器..."
 docker rm -f codex-register 2>/dev/null || true
-docker run -d --name codex-register -p 16888:1455 -v /root/codex-console/data:/app/data -v /root/codex-console/logs:/app/logs codex-register
+docker run -d --name codex-register \
+    -p 16888:1455 \
+    -v /root/codex-console/data:/app/data \
+    -v /root/codex-console/logs:/app/logs \
+    -e WEBUI_ACCESS_PASSWORD=Aa112233@ \
+    codex-register
 
 sleep 5
 echo "安装 starlette 修复..."
@@ -38,3 +43,4 @@ docker restart codex-register
 
 echo "=== 安装完成 ==="
 echo "访问地址: http://你的IP:16888"
+echo "登录密码: Aa112233@"
