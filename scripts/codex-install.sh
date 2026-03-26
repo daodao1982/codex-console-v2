@@ -25,7 +25,7 @@ docker build -t codex-register .
 echo "启动容器..."
 docker rm -f codex-register 2>/dev/null || true
 docker run -d --name codex-register \
-    -p 8050:1455 \
+    -p 16888:1455 \
     -v /root/codex-console/data:/app/data \
     -v /root/codex-console/logs:/app/logs \
     -e HTTP_PROXY="" \
@@ -39,4 +39,4 @@ docker exec codex-register pip install --no-cache-dir 'starlette==0.52.1' 2>/dev
 docker restart codex-register
 
 echo "=== 安装完成 ==="
-echo "访问地址: http://你的IP:8050"
+echo "访问地址: http://你的IP:16888"
