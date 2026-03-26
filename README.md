@@ -1,19 +1,14 @@
-# codex-console
+# codex-console (126备份版)
 
-基于 [cnlimiter/codex-manager](https://github.com/cnlimiter/codex-manager) 持续修复和维护的增强版本。
+基于 cnlimiter/codex-manager 持续修复和维护的增强版本。
 
 这个版本的目标很直接: 把近期 OpenAI 注册链路里那些“昨天还能跑，今天突然翻车”的坑补上，让注册、登录、拿 token、打包运行都更稳一点。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 
-- GitHub Repo: [https://github.com/dou-jiang/codex-console](https://github.com/dou-jiang/codex-console)
 
 ## QQ群
-
-- 交流群: [291638849??????](https://qm.qq.com/q/4TETC3mWco)
-- Telegram ??: [codex_console](https://t.me/codex_console)
-
 ## 致谢
 
 首先感谢上游项目作者 [cnlimiter](https://github.com/cnlimiter) 提供的优秀基础工程。
@@ -221,8 +216,6 @@ dist/codex-console-windows-X64.exe
 本项目仅供学习、研究和技术交流使用，请遵守相关平台和服务条款，不要用于违规、滥用或非法用途。
 
 因使用本项目产生的任何风险和后果，由使用者自行承担。
-
-## ????
 
 ?????????????????????????????
 
